@@ -1,0 +1,20 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - 'tmp/**/*'
+
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - 'lib/thredded_create_app/tasks/*/*.rb'
+
+Metrics/ClassLength:
+  Max: 125
+
+Metrics/BlockLength:
+  Max: 30
+
+Metrics/MethodLength:
+  Max: 25
+
+Style/Documentation:
+  Enabled: false
