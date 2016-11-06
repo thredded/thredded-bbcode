@@ -2,6 +2,7 @@ AllCops:
   TargetRubyVersion: 2.3
   Exclude:
     - 'tmp/**/*'
+    - 'vendor/bundle/**'
 
 Style/FrozenStringLiteralComment:
   Exclude:
