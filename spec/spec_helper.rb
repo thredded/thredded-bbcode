@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'thredded/markdown_coderay'
+require 'thredded/bbcode'
 
 require 'thredded'
 require 'thredded/content_formatter'
@@ -15,4 +15,4 @@ Thredded::ContentFormatter.class_eval do
   end
 end
 
-Thredded::MarkdownCoderay.setup!
+Thredded::BBCode.setup!

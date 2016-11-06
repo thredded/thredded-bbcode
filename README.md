@@ -1,40 +1,20 @@
-# Thredded Plugin: Syntax Highlighting in Markdown via Coderay [![Build Status](https://travis-ci.org/thredded/thredded-markdown_coderay.svg?branch=master)](https://travis-ci.org/thredded/thredded-markdown_coderay) [![Test Coverage](https://codeclimate.com/github/thredded/thredded-markdown_coderay/badges/coverage.svg)](https://codeclimate.com/github/thredded/thredded-markdown_coderay/coverage)
+# Thredded Plugin: BBCode [![Build Status](https://travis-ci.org/thredded/thredded-bbcode.svg?branch=master)](https://travis-ci.org/thredded/thredded-bbcode) [![Test Coverage](https://codeclimate.com/github/thredded/thredded-bbcode/badges/coverage.svg)](https://codeclimate.com/github/thredded/thredded-bbcode/coverage)
 
-A Thredded plugin that Highlights code syntax in your Markdown posts via
-[Coderay](https://github.com/rubychan/coderay).
-
-The result with the default styles looks like this:
-
-![thredded-markdown_coderay](https://cloud.githubusercontent.com/assets/216339/20035926/46650068-a3b5-11e6-90b0-2530bf1d98f5.png)
-
-Code language is not inferred, and must be specified, e.g.:
-
-    ```ruby
-    puts 'hi'
-    ```
-    
-or
-
-    ~~~ ruby
-    puts 'hi'
-    ~~~
-
-Currently only supports the default Thredded markdown parser:
-[Kramdown](https://github.com/gettalong/kramdown).
+A Thredded plugin that processes your Thredded posts with BBCode via
+[BBCoder](https://github.com/asceth/bbcoder).
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'thredded-markdown_coderay'
+gem 'thredded-bbcode'
 ```
 
 And then execute:
 
 ```bash
 bundle
-rails g thredded:markdown_coderay:install
 ```
 
 ## Usage
@@ -55,7 +35,7 @@ push git commits and tags, and push the `.gem` file to
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/thredded/thredded-markdown_coderay. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/thredded/thredded-bbcode. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
