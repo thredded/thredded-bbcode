@@ -65,7 +65,7 @@ describe Thredded::BBCode do
 
   joel says
   <blockquote>
-
+#{' ' * 4}
 
   john says
   <blockquote>
@@ -88,6 +88,15 @@ hi
     expected_html =
       '<p><span class="thredded--post--content--spoiler">hi</span> ' \
       '<span class="thredded--post--content--spoiler">hey</span></p>'
+    expect(Thredded::ContentFormatter.new(nil).format_content(bbcode))
+      .to(eq expected_html)
+  end
+
+  it 'links' do
+    bbcode = '[url]http://example.com[/url]'
+    expected_html =
+      '<p><a href="http://example.com" target="_blank"' \
+      ' rel="nofollow noopener">example.com</a></p>'
     expect(Thredded::ContentFormatter.new(nil).format_content(bbcode))
       .to(eq expected_html)
   end
