@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'bbcoder'
 require 'html/pipeline/filter'
 require 'html/pipeline/text_filter'

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module Thredded
   module BBCode
     class Railtie < Rails::Railtie
